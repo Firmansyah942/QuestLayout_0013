@@ -53,3 +53,13 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 containerColor = colorResource(R.color.card_0_bg)
             )
         ) {
+            Row {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
